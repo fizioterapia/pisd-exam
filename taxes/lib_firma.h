@@ -73,10 +73,7 @@ string Company::getIRS() {
 }
 
 ostream &operator<<(ostream &os, Company &f) {
-    for(int i = 0; i < 10; i++) {
-        os << f.getNIP()[i];
-    }
-    os << " " << f.getName();
+    os << f.getName();
 
     return os;
 }
