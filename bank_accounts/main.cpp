@@ -58,5 +58,9 @@ int main() {
         s = s->next;
     }
 
+    data1.close();
+    data2.close();
+    data3.close();
+
     return 0;
 }
