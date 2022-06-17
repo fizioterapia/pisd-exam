@@ -14,7 +14,7 @@ int main() {
     rad.open("radomsko.txt", ios::trunc);
     tom.open("tomaszow.txt", ios::trunc);
 
-    input.open("nipy.txt");
+    input.open("nips.dat");
 
     while(input) {
         string data;
