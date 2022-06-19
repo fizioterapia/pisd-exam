@@ -50,14 +50,14 @@ int main() {
         getline(podatnicy, dane);
 
         for(int i = 0; i < dane.length(); i++) {
-            if (dane[i] == ' ') {
+            if (dane[i] == ' ' && typ == false) {
                 typ = true;
                 continue;
             }
             if (typ == false) {
-                imie = imie + dane[i];
-            } else {
                 nazwisko = nazwisko + dane[i];
+            } else {
+                imie = imie + dane[i];
             }
         }
 
